@@ -12,7 +12,15 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxt/ui": "^2.9.0",
-    "nuxt": "^3.7.4"
+    "nuxt": "^3.7.4",
+    "prisma": "^5.6.0"
   },
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.0.2",
+  "dependencies": {
+    "@azure/msal-browser": "^3.1.0",
+    "@pinia/nuxt": "^0.5.1",
+    "@prisma/client": "^5.6.0",
+    "mitt": "^3.0.1",
+    "pinia": "^2.1.7"
+  }
 }
