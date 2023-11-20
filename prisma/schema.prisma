@@ -6,6 +6,41 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
+}
+
+// A user can have many permissions, and a permission can have one user.
+// An Application can have many permissions, and a permission can have one application.
+
+model User {
+  id         Int          @id @default(autoincrement())
+  email      String       @unique
+  name       String?
+  createdAt  DateTime     @default(now())
+  updatedAt  DateTime     @updatedAt
+  deletedAt  DateTime?
+  Permission Permission[]
+}
+
+model Application {
+  id         Int          @id @default(autoincrement())
+  name       String
+  features   String
+  Permission Permission[]
+}
+
+model Permission {
+  id            Int         @id @default(autoincrement())
+  user          User        @relation(fields: [userId], references: [id])
+  application   Application @relation(fields: [applicationId], references: [id])
+  role          Role
+  userId        Int
+  applicationId Int
+}
+
+enum Role {
+  OWNER
+  ADMIN
+  USER
 }
