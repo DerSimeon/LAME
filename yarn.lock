@@ -39,19 +39,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/msal-browser@npm:^3.1.0":
-  version: 3.5.0
-  resolution: "@azure/msal-browser@npm:3.5.0"
+"@azure/msal-browser@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "@azure/msal-browser@npm:3.6.0"
   dependencies:
-    "@azure/msal-common": "npm:14.4.0"
-  checksum: ac3d578d2139db45766e181b90262cfd73641129722e8b5b4cade4a4641de4f00c3bef341386e32ba2c64d09c1250a0c944b8b9bb43f2feedc7705d5611c74f5
+    "@azure/msal-common": "npm:14.5.0"
+  checksum: dcae110e35ef513c0a76a5e027fde61a0dc2786731429cdec6538d2579b46ee209027d547d53606d6aee35972ef86caff9d045d61505bd187dc309aad53282a9
   languageName: node
   linkType: hard
 
-"@azure/msal-common@npm:14.4.0":
-  version: 14.4.0
-  resolution: "@azure/msal-common@npm:14.4.0"
-  checksum: 2340d080d21f8b9c648246ac10672fe5b04ebb6ce84acde37ca34445ea39db71b399318f56c140002aefdd07dca4b0686e54be0bc18a37771ad48c1a7328236f
+"@azure/msal-common@npm:14.5.0":
+  version: 14.5.0
+  resolution: "@azure/msal-common@npm:14.5.0"
+  checksum: 121a40edbd632ca59f575342c00c676a25d7bd4ce0b619b6d9f14b13dd04c56b0742a63cc101fea06a6dcc5c2a7375cd966c45949028fb1aa4fdff712c88643f
   languageName: node
   linkType: hard
 
@@ -6238,7 +6238,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nuxt-app@workspace:."
   dependencies:
-    "@azure/msal-browser": "npm:^3.1.0"
+    "@azure/msal-browser": "npm:^3.6.0"
     "@nuxt/devtools": "npm:latest"
     "@nuxt/ui": "npm:^2.9.0"
     "@pinia/nuxt": "npm:^0.5.1"
